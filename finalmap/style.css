@@ -5,45 +5,54 @@
 }
 body{
     height: 100vh;
-    /* width: 100vw; */
     background-repeat: no-repeat;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(./images/bg.png);
+    background-image: url(../images/bg.png);
     background-size: cover;
     background-position: center;
+height: 100vh;
+
 }
 .upper{
     width: 100%;
     margin-top: 2.5rem;
 }
+.playnow,.upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 button{
     background-color: transparent;
     color: #fff;
     height: 3rem;
-    width: 20rem;
+    padding: 1rem;
+    width: 65%;
     border: 2px solid #fff;
     border-radius: 50px;
 }
 .image60 img{
     height: 8rem;
-/* translate: -5rem; */
+    /* top: 0; */
+translate: -3rem;
 }
 
 .image61{
     display: flex;
     justify-content: flex-end;
     /* border: 1px solid red; */
+    top: 0;
 }
 .image61 img{
-    /* translate: 4.5rem; */
+    translate: 3rem;
     height: 5rem;
 }
 .image196 img{
@@ -52,7 +61,7 @@ button{
 }
 
 .play{
-    background-image: url(./images/button.png);
+    background-image: url(../images/button.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 4rem;
@@ -66,6 +75,11 @@ button{
     }
     .main{
         overflow-x: hidden;
-
     }
+    button{
+        align-self: center;
+        /* width: 60%; */
+        height: 5.5rem;
+    }
+  
   }
